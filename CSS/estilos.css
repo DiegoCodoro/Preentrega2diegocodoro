@@ -11,19 +11,23 @@ a{
 
 }
 
+@font-face {
+    font-family: "Bombing";
+    src: url(../FUENTES/bombing/Bombing.ttf);
+}
 /* header */
 
 .cont-header{
     display: flex;
-    position: sticky;
-    padding: 0;
-    top: 0;
-    background-color: rgb(36, 73, 73);
+    
+    /* background-color: rgb(36, 73, 73); */
     
 }
 
 .navbar{
     margin-top: 10px;
+    background-position: 0;
+    background-size: cover;
     background-color: rgb(36, 73, 73);
 }
 
@@ -36,7 +40,19 @@ a{
 
 .navbar ul {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
+
+label.menu {
+    display: block;
+    font-size: 1.7em;
+    color: aliceblue;
+cursor: pointer;
+}
+
+
 
 .sub-menu {
     display: flex;
@@ -58,18 +74,16 @@ a{
 main {
     background-color: rgb(0, 0, 0);
     width: 100%;
-    background-position: 0;
-    background-size: cover;
+
 }
 .titulo-home{
     background-image: url(../IMAGENES/pantalla\ proncipal.png);
-    /* height: 1000px; */
     height: 1000px;
     background-position: 0;
     background-size: cover;
     color:rgb(83, 17, 170);
     font-size: 80px;
-    font-family: fantasy;
+    font-family: "Bombing", serif;
     text-align: center;
     padding-top: 40px;
     margin-bottom: 40px;
@@ -94,6 +108,13 @@ main {
 
 }
 
+/*MEDIA QUERI NO FUNCIONO*/
+
+/* @media (max-width:768px){
+    .subtitulo-home {
+        background-color: aliceblue;
+    }
+} */
 
 .cont-galeria-home{
     padding: 60px;
@@ -132,9 +153,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 80px;
+    font-size: 100px;
     padding-top: 3rem;
     color: rgb(175, 153, 238);
+    font-family: "Bombing", serif;
 
 }
 
@@ -178,16 +200,17 @@ main {
 }
 
 .p-preg-frec{
-     font-size: 40px;
-     color: aliceblue;
-     border: 3px solid;
-     border-color: azure;
+    font-size: 40px;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: azure;
 }
 
 /* Nosotros */
 .titulo-nosotros{
     color: rgb(175, 153, 238);
-    font-size: 60px;
+    font-family: "Bombing", serif;
+    font-size: 100px;
     font-weight: 1000;
     text-align: center;
     padding: 40px 0 30px;
@@ -239,6 +262,7 @@ padding: 10px;
 
 }
 
+
 .contenedor-hijo{
     align-self: center;
     height: 400px;
@@ -251,17 +275,33 @@ border-radius: 20px;
 
 
 /* footer */
+ 
+.grid-footer{
+padding: 10px;
+display: flex;
+flex-direction: row;
+text-align: center;
+flex-wrap: nowrap;
+gap: 10px;
+justify-content: space-between;
+align-items: stretch;
+background-color: aliceblue;
+
+}
+
 
 .titulo-footer{
-    background-color: rgb(66, 129, 187);
+background-color: aliceblue;
+
+    width: 500px;
     color: blueviolet;
-    font-size: 50px;
+    font-size: 30px;
+
 }
 
 .cont-footer-text{
-background-color: rgb(66, 129, 187);
 color: antiquewhite;
-font-size: 30px;
+font-size: 20px;
 display: flex;
 padding: 20px;
 
@@ -280,3 +320,92 @@ padding: 20px;
     margin: 35px;
 }
 
+@media screen and (max-width:768px) {
+    
+    .titulo-home{
+        font-size: 50px;
+        height: 320px;
+        /* padding-top: 10px; */
+        color: rgb(226, 95, 43);
+    }
+    .content-home{
+        font-size: 15px;
+        text-align: center;
+        border: 3px solid;
+        padding: 10px;
+    }
+    .subtitulo-home{
+        font-size: 30px;
+        height: 55px;
+        text-align: center;
+        padding-top: 10px;
+        
+    }
+    .cont-galeria-home{
+        padding: 0;
+        border: 1px solid black;
+        border-radius: 0;
+        height: ;
+    }
+    .navbar {
+    display: none;
+    }
+    
+    /* label.menu {
+        display: block;
+        font-size: 1.7em;
+        color: aliceblue;
+        cursor: pointer; } */
+}
+
+@media all and (min-width:360px) {
+    .seccion-form{
+        display: flex;
+        font-size: 50px;
+        text-align: center;
+    }
+    .form-input{
+        height: 40px;
+    font-size: 20px;
+    }
+    .form-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 500px;
+    margin-top: 4rem;
+    }
+    .cont-galeria-home{
+        padding: 0;
+        /* margin-left: -170px; */
+        border: 1px solid black;
+        border-radius: 0;
+
+        
+    }
+    
+        .form-teax-area{
+            height: 250px;
+            font-size: 25px;
+        }
+        .btn-form{
+            
+                height: 50px;
+                width: 150px;
+                font-size: 25px;
+                margin-bottom: 0;
+        }
+        .preg-frec{
+            color: rgb(152, 209, 20);
+            font-size: 30px;
+            margin: 20px;
+        
+        }
+        
+        .p-preg-frec{
+            font-size: 30px;
+            color: aliceblue;
+            border: 3px solid;
+            border-color: rgb(23, 209, 209);}
+    
+}
