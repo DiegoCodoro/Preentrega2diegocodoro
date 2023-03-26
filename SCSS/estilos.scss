@@ -1,0 +1,42 @@
+.logo{
+    width: 80px;
+    height: 50px;
+    margin: 10px;
+}
+
+
+.cont-header{
+    display: flex;
+    background-color: rgb(36, 73, 73);
+    }
+
+.navbar{
+    margin-top: 10px;
+}
+
+.navbar ul .nav-item{
+    display: inline;
+    padding: 0 120px 20px;
+}
+
+
+.navbar ul {
+    display: flex;
+
+
+}
+
+.sub-menu {
+    display: flex;
+    margin-left: -220px;
+
+}
+.item-sub-menu {
+    margin-left: 75px;
+}
+
+.nav-item a {
+    color:rgb(243, 127, 127);
+    font-size: 50px;
+    font-family: "Bombing";
+}
