@@ -1,42 +1,313 @@
+$h500:500px;
+$h20:20px;
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Bombing";
+    src: url(../FUENTES/bombing/Bombing.ttf);
+}
+
 .logo{
     width: 80px;
     height: 50px;
     margin: 10px;
 }
 
-
-.cont-header{
-    display: flex;
-    background-color: rgb(36, 73, 73);
-    }
-
-.navbar{
-    margin-top: 10px;
+.container-fluid{
+    background: rgb(105,242,245);
+background: radial-gradient(circle, rgba(105,242,245,1) 3%, rgba(0,0,0,1) 70%);
+    
 }
 
-.navbar ul .nav-item{
-    display: inline;
-    padding: 0 120px 20px;
+.nav-item{
+    .nav-link{ 
+    font-size: 25px;
+    color: aliceblue;
+}
 }
 
+.navbar-nav{
+margin-left: $h20;
+color: #9CEB28;
+}
 
-.navbar ul {
-    display: flex;
+.navbar-nav{ 
+    .dropdown-menu {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(18,109,193,1) 100%);
+}
+}
 
+main {
+    background: rgb(112,245,105);
+    background: radial-gradient(circle, rgba(112,245,105,1) 3%, rgba(0,0,0,1) 70%);
 
 }
 
-.sub-menu {
-    display: flex;
-    margin-left: -220px;
-
+.titulo-home{
+    background-image: url(../IMAGENES/pantalla\ proncipal.png);
+    height: $h500;
+    background-position: 100%;
+    background-size: cover;
+    color:rgba(0, 0, 0, 0.966);
+    font-size: 60px;
+    font-family: "Bombing", serif;
+    text-align: center;
+    padding-top: 10px;
+    
 }
-.item-sub-menu {
-    margin-left: 75px;
+
+.content-home{
+
+    padding: 10px;
+    border: 5px solid;
+    font-size: $h20;
+    color: rgb(255, 255, 255);
+    
 }
 
-.nav-item a {
-    color:rgb(243, 127, 127);
+/* productos mas vendidos */
+
+.subtitulo-home{
+    font-family: "Bombing", serif;
+    background-color: #9CEB28;
     font-size: 50px;
-    font-family: "Bombing";
+    text-align: center;
+    padding: 10px 0 10px;
+
 }
+
+.carousel-item{
+    width: 0px;
+    height: 550px;
+}
+
+
+.cont-galeria-home{
+   
+    /*verificar que no dañe este dato*/
+    margin-left: 50px;
+    border-radius: $h20;
+
+}
+
+/* galeria o carrusel */
+.img-mas-vendidos{
+    
+    margin: 20px 20px 30px;
+    text-align: center;
+    height: 300px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* galeria o carrusel */
+.img-ofertas{
+    padding: 10px;
+    margin: 20px 20px 30px;
+    text-align: center;
+    height: 300px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+/* contacto */
+
+.seccion-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    padding-top: 3rem;
+    color: rgb(175, 153, 238);
+    font-family: "Bombing", serif;
+
+}
+
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 800px;
+    margin-top: 3rem;
+
+}
+
+.form-input{
+    height: 50px;
+    font-size: 25px;
+}
+
+.form-teax-area{
+    height: 200px;
+    font-size: 30px;
+}
+
+.div-btn-form{
+    display: flex;
+    justify-content:space-between
+}
+
+.btn-form{
+        height: 40px;
+        width: 200px;
+        font-size: 25px;
+        margin-bottom: 50px;
+}
+
+.preg-frec{
+    color: rgb(38, 161, 177);
+    font-size: 35px;
+    margin: 20px;
+
+}
+
+.p-preg-frec{
+    font-size: 25px;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: azure;
+}
+
+/* Nosotros */
+.titulo-nosotros{
+    color: rgb(175, 153, 238);
+    font-family: "Bombing", serif;
+    font-size: 60px;
+    font-weight: 10;
+    text-align: center;
+    padding: 20px 0 30px;
+}
+
+.p-nosotros{
+    padding: 20px;
+    border: 1px solid;
+    font-size: 20px;
+    color: rgba(240, 248, 255, 0.822);
+    margin: 10px;
+}
+
+.titul-sec-nosotros{
+    color: rgb(239, 243, 8);
+    font-size: 40px;
+    font-weight: 1000;
+    padding: 40px 0 30px;
+    text-align: center;
+}
+
+.cont-nosotros{
+display: flex;
+justify-content: space-evenly;
+padding-bottom: 20px;
+}
+
+.ubi-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    font-size: 40px;
+    color: rgba(240, 248, 255, 0.822);
+padding: 10px;
+}
+
+/* producos */
+
+.cont-produc{
+    background-color: rgb(225, 219, 240);
+    color: rgb(2, 2, 2);
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.contenedor-padre{
+    background-color: rgb(219, 243, 235);
+    height: 420px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.contenedor-hijo{
+    align-self: center;
+    height: 300px;
+    width: 350px;
+    border: 1px solid black;
+border-radius: 20px;
+
+
+}
+
+
+/* footer */
+
+.grid-footer{
+padding: 10px;
+display: flex;
+flex-direction: row;
+text-align: center;
+flex-wrap: nowrap;
+gap: 10px;
+justify-content: space-between;
+align-items: stretch;
+background: rgb(105,242,245);
+background: radial-gradient(circle, rgba(105,242,245,1) 3%, rgba(0,0,0,1) 70%);
+
+}
+
+
+.titulo-footer{
+
+    width: 300px;
+    color: rgba(108, 58, 155, 0.979);
+    font-size: 20px;
+
+}
+
+.cont-footer-text{
+color: rgb(218, 157, 78);
+font-size: 20px;
+display: flex;
+padding: 20px;
+
+}
+
+
+.cont-footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(105,242,245);
+background: radial-gradient(circle, rgba(105,242,245,1) 3%, rgba(0,0,0,1) 70%);
+}
+
+.icon-footer{
+    font-size: 70px;
+    color: rgb(112, 38, 38);
+    margin: 35px;
+    
+}
+
+@import "queris"
+
