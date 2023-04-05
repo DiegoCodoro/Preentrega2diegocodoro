@@ -10,13 +10,13 @@
     .navbar-nav{
         .nav-item{
         display: flex;
-        padding: 0px 70px 0px; 
+        padding: 0px; 
     }    
     }
 
     .nav-item {
         .nav-link{
-        color:rgb(212, 253, 220);
+        color:rgb(8, 10, 9);
         font-size: 30px;
         font-family: "Bombing";
                 }
@@ -24,7 +24,7 @@
 
     .dropdown-menu.show{
             .dropdown-item{
-        color: rgb(242, 248, 243);
+        color: rgb(16, 20, 17);
     }    
     }
 
@@ -205,17 +205,30 @@
 {
 
     .logo{
-        width: 40px;
-        height: 20px;
+        width: 50px;
+        height: 30px;
         margin: 10px;
     }
     
-    .navbar{
+    .navbar-nav{
         .nav-item{
-        display: inline;
-        padding: 0;
-        margin-left: 40px;
-        }
+        display: flex;
+        padding: 0px; 
+    }    
+    }
+
+    .nav-item {
+        .nav-link{
+        color:rgb(8, 10, 9);
+        font-size: 25px;
+        font-family: "Bombing";
+                }
+    }
+
+    .dropdown-menu.show{
+            .dropdown-item{
+        color: rgb(16, 20, 17);
+    }    
     }
     
     .item-sub-menu {
