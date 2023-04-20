@@ -29,7 +29,7 @@ background-image: linear-gradient(to left,rgba(227, 252, 0, 0.356),rgb(80, 156, 
 }
 
 .nav-item{
-    .nav-link{ 
+    .nav-link{
     font-size: 25px;
     color: aliceblue;
 }
@@ -40,7 +40,7 @@ margin-left: $h20;
 color: #9CEB28;
 }
 
-.navbar-nav{ 
+.navbar-nav{
     .dropdown-menu {
     background-image: linear-gradient(to top,rgb(35, 95, 17),rgb(170, 175, 121));
 
@@ -62,7 +62,7 @@ main {
     font-family: "Bombing", serif;
     text-align: center;
     padding-top: 10px;
-    
+
 }
 
 .content-home{
@@ -71,7 +71,7 @@ main {
     border: 5px solid;
     font-size: $h20;
     color: rgb(255, 255, 255);
-    
+
 }
 
 /* productos mas vendidos */
@@ -85,10 +85,13 @@ main {
 
 }
 
-.carousel-item{
-    width: 0px;
-    height: 550px;
-}
+
+// .carousel-item.active{
+//     ;
+// }
+// .imag-prod{
+
+// }
 
 
 .cont-galeria-home{
@@ -100,7 +103,7 @@ main {
 
 /* galeria o carrusel */
 .img-mas-vendidos{
-    
+
     margin: 20px 20px 30px;
     text-align: center;
     height: 300px;
@@ -302,7 +305,7 @@ padding: 20px;
     font-size: 70px;
     color: rgb(14, 4, 4);
     margin: 150px;
-    
+
 }
 
 @import "queris"
