@@ -2,10 +2,10 @@ $h500:500px;
 $h20:20px;
 
 *{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 a{
@@ -62,7 +62,12 @@ main {
     font-family: "Bombing", serif;
     text-align: center;
     padding-top: 10px;
+    animation: swing;
+    animation-duration: 2s;
+}
 
+.p-mobile-horarios{
+    display: none;
 }
 
 .content-home{
@@ -73,6 +78,7 @@ main {
     color: rgb(255, 255, 255);
 
 }
+
 
 /* productos mas vendidos */
 
@@ -86,22 +92,17 @@ main {
 }
 
 
-// .carousel-item.active{
-//     ;
-// }
-// .imag-prod{
-
-// }
-
-
 .cont-galeria-home{
 
     margin-left: 50px;
     border-radius: $h20;
+    gap: 40px;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
 
 }
 
-/* galeria o carrusel */
+
 .img-mas-vendidos{
 
     margin: 20px 20px 30px;
@@ -112,7 +113,7 @@ main {
     border-radius: 20px;
 }
 
-/* galeria o carrusel */
+
 .img-ofertas{
     padding: 10px;
     margin: 20px 20px 30px;
@@ -125,6 +126,12 @@ main {
 
 
 /* contacto */
+
+.subtit-contacto{
+    background-color: aliceblue;
+    text-align: center;
+    font-weight: 800;
+}
 
 .seccion-form{
     display: flex;
@@ -226,6 +233,12 @@ padding-bottom: 20px;
 padding: 10px;
 }
 
+.cont-ubicacion-nosotros{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
 /* producos */
 
 .cont-produc{
@@ -296,9 +309,12 @@ padding: 20px;
 
 
 .cont-footer{
-    display: flex;
-    justify-content: space-around;
     background-image: linear-gradient(to left,rgb(23, 119, 4),rgb(121, 124, 97));
+}
+
+.cont-icon-footer{
+  display: flex;
+  justify-content: space-around;
 }
 
 .icon-footer{

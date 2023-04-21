@@ -51,6 +51,12 @@ main {
   font-family: "Bombing", serif;
   text-align: center;
   padding-top: 10px;
+  animation: swing;
+  animation-duration: 2s;
+}
+
+.p-mobile-horarios {
+  display: none;
 }
 
 .content-home {
@@ -69,17 +75,14 @@ main {
   padding: 10px 0 10px;
 }
 
-.carousel-item {
-  width: 0px;
-  height: 550px;
-}
-
 .cont-galeria-home {
   margin-left: 50px;
   border-radius: 20px;
+  gap: 40px;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-/* galeria o carrusel */
 .img-mas-vendidos {
   margin: 20px 20px 30px;
   text-align: center;
@@ -89,7 +92,6 @@ main {
   border-radius: 20px;
 }
 
-/* galeria o carrusel */
 .img-ofertas {
   padding: 10px;
   margin: 20px 20px 30px;
@@ -101,6 +103,12 @@ main {
 }
 
 /* contacto */
+.subtit-contacto {
+  background-color: aliceblue;
+  text-align: center;
+  font-weight: 800;
+}
+
 .seccion-form {
   display: flex;
   flex-direction: column;
@@ -197,6 +205,12 @@ main {
   padding: 10px;
 }
 
+.cont-ubicacion-nosotros {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
 /* producos */
 .cont-produc {
   background-color: rgb(225, 219, 240);
@@ -254,9 +268,12 @@ main {
 }
 
 .cont-footer {
+  background-image: linear-gradient(to left, rgb(23, 119, 4), rgb(121, 124, 97));
+}
+
+.cont-icon-footer {
   display: flex;
   justify-content: space-around;
-  background-image: linear-gradient(to left, rgb(23, 119, 4), rgb(121, 124, 97));
 }
 
 .icon-footer {
