@@ -223,7 +223,6 @@ main {
 
 .contenedor-padre {
   background-color: rgb(219, 243, 235);
-  height: 420px;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -379,7 +378,6 @@ main {
   }
   .contenedor-padre {
     background-color: rgb(47, 65, 59);
-    height: 420px;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -572,7 +570,6 @@ main {
   }
   .contenedor-padre {
     background-color: rgb(131, 38, 53);
-    height: 250px;
     padding: 10px;
     display: flex;
     flex-direction: row;
