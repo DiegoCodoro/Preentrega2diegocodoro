@@ -599,19 +599,20 @@ main {
   }
   .titul-sec-nosotros {
     color: rgb(202, 204, 102);
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
   .cont-nosotros {
     display: flex;
     justify-content: space-evenly;
+    width: 20px;
   }
   .ubi-nosotros {
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: 1px solid;
-    font-size: 10px;
+    font-size: 15px;
     color: rgba(240, 248, 255, 0.822);
     padding: 10px;
   }
